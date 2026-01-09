@@ -10,8 +10,8 @@ from telegram.ext import (
 )
 
 # ===== CONFIG =====
-TOKEN = "8484271564:AAFn5LwIQFh_AbNi_pHbzpUtrRsrDYrBHp8"          # BotFather token yahan daalo
-ADMIN_USERNAME = "Nubcarder"      # @ ke bina
+TOKEN = os.getenv("TOKEN")          # Railway ENV variable se token
+ADMIN_USERNAME = "nubcarder"        # lowercase rakho (safe)
 DB_FILE = "data.json"
 
 # ===== AUTO CREATE JSON =====
